@@ -21,7 +21,7 @@ import random
 from tinytag import TinyTag
 
 from adapt.intent import IntentBuilder
-from mycroft.skills.core import MycroftSkill
+from mycroft.skills.core import MycroftSkill, intent_handler
 from mycroft.skills.audioservice import AudioService
 from mycroft.configuration import Configuration
 from mycroft.configuration.config import SYSTEM_CONFIG, USER_CONFIG
