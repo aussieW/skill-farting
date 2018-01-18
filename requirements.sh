@@ -1,1 +1,1 @@
-sudo pip install tinytag
+
