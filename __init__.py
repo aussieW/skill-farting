@@ -55,7 +55,6 @@ class FartingSkill(MycroftSkill):
         self.register_intent_file('accuse.intent', self.handle_accuse_intent)
         self.register_intent_file('request.intent', self.handle_request_intent)
         self.register_intent_file('random.intent', self.handle_random_intent)
-        self.register_intent_file('cancel.intent', self.handle_cancel_intent)
 
         if AudioService:
             self.audioservice = AudioService(self.emitter)
@@ -69,7 +68,7 @@ class FartingSkill(MycroftSkill):
         LOGGER.info("Farting skill: Handling fart event")
         if not self.random_farting:
             return
-#	self.remove_event('random_fart')  # not currently working - using cancel_schedule_event() instead
+#       self.remove_event('random_fart')  # not currently working - using cancel_schedule_event() instead
         self.cancel_scheduled_event('randon_fart'+str(self.counter))
         self.counter += 1
         self.schedule_event(self.handle_fart_event, datetime.now() + timedelta(seconds=random.randrange(60, 1800)), name='random_fart'+str(self.counter))
@@ -101,7 +100,8 @@ class FartingSkill(MycroftSkill):
         time.sleep(int(tag.duration) + delay)
         self.speak_dialog('noise')
 
-    def handle_cancel_intent(self, message):
+    @intent_handler(IntentBuilder().requires("halt").requires("farting"))
+    def halt_farting(self, message):
         # stop farting
         LOGGER.info("Farting skill: Stopping")
         # if in random fart mode, cancel the scheduled event
