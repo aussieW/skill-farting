@@ -101,7 +101,7 @@ class FartingSkill(MycroftSkill):
         time.sleep(int(tag.duration) + delay)
         self.speak_dialog('noise')
 
-    @intent_handler(IntentBuilder().requires("halt").requires("farting"))
+    @intent_handler(IntentBuilder('halt_farting').requires("halt").requires("farting"))
     def halt_farting(self, message):
         # stop farting
         LOGGER.info("Farting skill: Stopping")
