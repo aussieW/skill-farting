@@ -20,6 +20,7 @@ from datetime import datetime, timedelta
 import random
 from tinytag import TinyTag
 
+from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
 from mycroft.skills.audioservice import AudioService
 from mycroft.configuration import Configuration
