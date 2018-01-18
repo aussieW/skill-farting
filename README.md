@@ -17,7 +17,6 @@ Has been tested on picroft and mark1.
 * "make a farting noise"
 * "fart randomly"
 * "stop farting"
-* "would you stop that"
 
 ## Credits 
 aussieW
