@@ -1,10 +1,10 @@
-## Make fart sounds
+# <img src='fart.png' card_color='#40DBB0' width='50' height='50' style='vertical-align:bottom'/>Farting
 Mycroft will play a farting sound when requested or at random intervals
 
-## Description 
+## About
 This is just a fun skill that should generate a laugh or two and then never be used again.
 
-When asked "did you fart", Mycroft will answer with a statement such as "it wasn't me. it was the dog". 
+When asked "did you fart", Mycroft will answer with a statement such as "it wasn't me. it was the dog".
 
 When told to "make a farting sound", Mycroft will play a randomly selected fart sound file, followed by a statement such as "did someone sit on a whoopee cushion".
 
@@ -12,7 +12,8 @@ When told to "let one slip" or "fart randomly", Mycroft will play a fart sound f
 
 Has been tested on picroft and mark1.
 
-## Examples 
+
+## Examples
 * "did you fart"
 * "what is that smell"
 * "fart"
@@ -20,8 +21,14 @@ Has been tested on picroft and mark1.
 * "fart randomly"
 * "stop farting"
 
-## Credits 
+## Credits
 aussieW
 
-## Require 
-platform_mark1 platform_picroft 
+## Category
+**Entertainment**
+
+## Tags
+#fart
+#smell
+#fun
+
